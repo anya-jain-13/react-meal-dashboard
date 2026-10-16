@@ -1,0 +1,51 @@
+
+.status-message {
+  text-align: center;
+  padding: 32px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.status-message p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #16a34a;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+
+.error h3 {
+  color: #dc2626;
+}
+
+.status-message button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  cursor: pointer;
+}
+
+.status-message button:hover {
+  background: #15803d;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
